@@ -20,6 +20,7 @@ function toggleColors() {
     let el = document.querySelectorAll('.tm-white-rect');
 
     for (i = 0; i < el.length; ++i) {
+        // debugger
         el[i].classList.add('tm-blue-rect');
         el[i].classList.remove('tm-white-rect');
     }
@@ -53,7 +54,4 @@ function hideElement() {
     let addresspara = document.getElementById('addresspara');
     addresspara.innerText = "800-555-5555"
 
-}; 
-
-
-
+};

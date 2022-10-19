@@ -1,7 +1,7 @@
 var customerName = "Alliance  ";
 
 // <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
-function addCustomerName(customerName) {
+function addCustomerName() {
 
     let title = document.getElementById('title')
     title.textContent = customerName;
@@ -16,7 +16,7 @@ function addCustomerName(customerName) {
 
 
 };
-
+/*
 function toggleColors() {
     let toggClrs = document.getElementsByClassName("tm-white-rect");
 
@@ -24,12 +24,12 @@ function toggleColors() {
     // <!-- todo: Change all classes named 'tm-white-rect' to 'tm-blue-rect' -->
 
 };
-
+*/
 function hideElement() {
 
-    let hidEle = document.querySelectorAll(".tm-social-links")//<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
+    let hidEle = document.querySelector(".tm-social-links")//<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
 
-    hidEle.display = "none"
+    hidEle.style.display = "none"
 };
 
  function addText() {
@@ -47,6 +47,5 @@ function hideElement() {
 };
 
 
-addCustomerName(customerName)
-toggleColors()
+addCustomerName()
 hideElement()
